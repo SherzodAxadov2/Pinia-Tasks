@@ -8,14 +8,22 @@ export const useTaskStore = defineStore("taskStore", {
     ],
     name: "Sherzod",
   }),
+
   getters:{
     favs:(state)=> state.tasks.filter(task=>task.isFav),
     favsCount:(state)=>  state.favs.length ,
     totalCount:(state)=> state.tasks.length
   },
+
   actions:{
     addTask(task){
         this.tasks.push(task)
+    },
+    deleteTodo(id){
+        this.tasks = this.tasks.filter(task=>task.id !==id)
+    },
+    toggleFav(id){
+        this.tasks.map(task=> task.id===id ? task.isFav = !task.isFav : task.isFav)
     }
   }
 });

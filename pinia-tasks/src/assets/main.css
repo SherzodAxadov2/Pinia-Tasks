@@ -66,11 +66,15 @@ header h1 {
   color: #bbb;
 }
 
+.task i.active {
+  color: #ff005d;
+}
+
 /* filter nav */
 .filter {
   max-width: 640px;
   margin-top: 10px;
-  max-width: 10px auto;
+  margin: 10px auto;
   text-align: right;
 }
 
@@ -84,4 +88,38 @@ header h1 {
   cursor: pointer;
   font-size: 0.8em;
   font-size: 1rem;
+}
+
+/* task form */
+.new-task-form {
+  background: #e7e7e7;
+  padding: 20px 0;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 15px;
+}
+
+form button {
+  background: #ffd859;
+  border: 0;
+  padding: 10px 25px;
+  font-family: 'Poppins';
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form input {
+  width: 100%;
+  flex: 1;
+  border: 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 1em;
+  outline: none;
 }
