@@ -123,3 +123,14 @@ form input {
   font-size: 1em;
   outline: none;
 }
+
+.loading {
+  max-width: 640px;
+  border: 1px solid #ffd859;
+  background: #ffe9a0;
+  color: #3a3a3a;
+  padding: 5px 0;
+  border-radius: 3px;
+  text-align: center;
+  margin: 30px auto;
+}

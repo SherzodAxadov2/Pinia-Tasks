@@ -16,6 +16,9 @@
       <button @click="filter = 'favs'">Favorite tasks</button>
     </nav>
 
+    <!-- Loading -->
+    <div class="loading" v-if="taskStore.isLoading">Loading tasks...</div>
+
     <!-- Task List -->
     <div class="task-list" v-if="filter === 'all'">
       <p>
@@ -34,6 +37,8 @@
         <TaskDetails :task="task" />
       </div>
     </div>
+
+    <!-- <button @click="taskStore.$reset">Reset</button> -->
   </main>
 </template>
 
@@ -45,4 +50,5 @@ import { ref } from "vue";
 
 const taskStore = useTaskStore();
 const filter = ref("all");
+taskStore.getTasks();
 </script>

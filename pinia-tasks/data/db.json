@@ -1,29 +1,19 @@
 {
-    "tasks":[
-        {
-            "id":1,
-            "title": "reading interensting things",
-            "isFav": true
-        },
-        {
-            "id":2,
-            "title": "eat some pineApple",
-            "isFav": true
-        },
-        {
-            "id":3,
-            "title": "reading interensting things",
-            "isFav": true
-        },
-        {
-            "id":4,
-            "title": "cooking",
-            "isFav": true
-        },
-        {
-            "id":5,
-            "title": "doing sports",
-            "isFav": true
-        }
-    ]
+  "tasks": [
+    {
+      "id": 2,
+      "title": "eat some pineApple",
+      "isFav": false
+    },
+    {
+      "id": 4,
+      "title": "cooking",
+      "isFav": false
+    },
+    {
+      "id": 1,
+      "title": "reading interensting things",
+      "isFav": false
+    }
+  ]
 }
